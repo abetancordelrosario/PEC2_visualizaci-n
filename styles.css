@@ -33,8 +33,6 @@ header {
     position: relative; /* Necesario para posicionar la lista */
 }
 
-/* Estilos para la lista a la derecha */
-.right-list {
-    margin-left: auto; 
-    margin-right: 0;
+.container {
+    display: flex;
 }
