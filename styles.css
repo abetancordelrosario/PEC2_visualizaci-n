@@ -25,33 +25,23 @@ header {
     margin-bottom: 10px;
 }
 
-.sidebar {
-    width: 25%;
+.visualization-section {
     margin: 20px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Necesario para posicionar la lista */
 }
 
-.sidebar h2 {
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
+/* Estilos para la lista a la derecha */
+.right-list {
+    position: absolute;
+    top: 0;
+    right: 0;
     list-style-type: none;
     padding: 0;
 }
 
-.sidebar li {
+.right-list li {
     margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.sidebar li:before {
-    content: "\2022";
-    color: #333;
-    font-size: 1.5em;
-    position: absolute;
-    left: 0;
 }
