@@ -25,7 +25,33 @@ header {
     margin-bottom: 10px;
 }
 
-.r-code {
-    font-family: 'Courier New', monospace;
-    color: #555;
+.sidebar {
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar li:before {
+    content: "\2022";
+    color: #333;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
 }
