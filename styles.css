@@ -33,6 +33,24 @@ header {
     position: relative; /* Necesario para posicionar la lista */
 }
 
+
+/* Estilos para el contenedor */
 .container {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.right-list {
+    margin-left: 20px; /* Agrega un margen entre el Timeline y la lista */
+}
+
+.right-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.right-list li {
+    margin-bottom: 10px;
 }
