@@ -3,26 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineID4a2447e9118"></script>
     <script type="text/javascript">
-        // Aquí va el código JavaScript generado
-        function displayChartTimelineID4a2447e9118() {
-            var pkgs = window.__gvisPackages = window.__gvisPackages || [];
-            var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
-            window.clearTimeout(window.__gvisLoad);
-            window.__gvisLoad = setTimeout(function() {
-                var pkgCount = pkgs.length;
-                google.load("visualization", "1", { packages:pkgs, callback: function() {
-                    if (pkgCount != pkgs.length) {
-                        return;
-                    }
-                    while (callbacks.length > 0)
-                        callbacks.shift()();
-                } });
-            }, 100);
+ 
+        // jsData 
+        function gvisDataTimelineID4a2447e9118 () {
+        var data = new google.visualization.DataTable();
+        var datajson =
+        [
+         [
+        "St Pius XPIVS Decimus",
+        new Date(1903,10,13),
+        new Date(1914,10,13)
+        ],
+        [
+        "Benedict XVBENEDICTVS Quintus Decimus",
+        new Date(1914,10,13),
+        new Date(1922,10,13)
+        ],
+        [
+        "Pius XIPIVS Undecimus",
+        new Date(1922,10,13),
+        new Date(1939,10,13)
+        ],
+        [
+        "Ven. Pius XIIPIVS Duodecimus",
+        new Date(1939,10,13),
+        new Date(1958,10,13)
+        ],
+        [
+        "St John XXIIIIOANNES Vicesimus Tertius",
+        new Date(1958,10,13),
+        new Date(1963,10,13)
+        ],
+        [
+        "St Paul VIPAVLVS Sextus",
+        new Date(1963,10,13),
+        new Date(1978,10,13)
+        ],
+        [
+        "Bl. John Paul I[39]IOANNES PAVLVS Primus",
+        new Date(1978,10,13),
+        new Date(1978,10,13)
+        ],
+        [
+        "St John Paul IIIOANNES PAVLVS Secundus",
+        new Date(1978,10,13),
+        new Date(2005,10,13)
+        ] 
+        ];
+        data.addColumn('string','Name..English..Latin');
+        data.addColumn('date','start_date');
+        data.addColumn('date','end_date');
+        data.addRows(datajson);
+        return(data);
         }
-    </script>
+         
+        // jsDrawChart
+        function drawChartTimelineID4a2447e9118() {
+        var data = gvisDataTimelineID4a2447e9118();
+        var options = {};
+        options["width"] = 600;
+        options["height"] = 400;
+        options["timeline"] = {groupByRowLabel:false};
+        options["backgroundColor"] = "#ffd";
+        options["weight"] = 1200;
+        options["colors"] = ['#cbb69d', '#603913', '#c69c6e'];
+        
+        
+            var chart = new google.visualization.Timeline(
+            document.getElementById('TimelineID4a2447e9118')
+            );
+            chart.draw(data,options);
+            
+        
+        }
+          
+         
+        // jsDisplayChart
+        (function() {
+        var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+        var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+        var chartid = "timeline";
+          
+        // Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+        var i, newPackage = true;
+        for (i = 0; newPackage && i < pkgs.length; i++) {
+        if (pkgs[i] === chartid)
+        newPackage = false;
+        }
+        if (newPackage)
+          pkgs.push(chartid);
+          
+        // Add the drawChart function to the global list of callbacks
+        callbacks.push(drawChartTimelineID4a2447e9118);
+        })();
+        function displayChartTimelineID4a2447e9118() {
+          var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+          var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+          window.clearTimeout(window.__gvisLoad);
+          // The timeout is set to 100 because otherwise the container div we are
+          // targeting might not be part of the document yet
+          window.__gvisLoad = setTimeout(function() {
+          var pkgCount = pkgs.length;
+          google.load("visualization", "1", { packages:pkgs, callback: function() {
+          if (pkgCount != pkgs.length) {
+          // Race condition where another setTimeout call snuck in after us; if
+          // that call added a package, we must not shift its callback
+          return;
+        }
+        while (callbacks.length > 0)
+        callbacks.shift()();
+        } });
+        }, 100);
+        }
+         
+        // jsFooter
+        </script>
+    <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineID4a2447e9118"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>PEC2: Estudio de técnicas de visualización de datos</title>
 </head>
 <body>
@@ -32,32 +130,27 @@
     </header>
 
     <section class="visualization-section">
-        <h2>Apartado 1: Visualización 1</h2>
-        <!-- Aquí insertamos el div que contiene la visualización -->
-        <div id="TimelineID4a2447e9118" style="width: 600px; height: 400px;"></div>
-        <p class="r-code">Código en R para generar esta visualización...</p>
+        <div id="TimelineID4a2447e9118" style="width: 600; height: 400;">
+            </div>
+            <div><span>Data: viz &#8226; Chart ID: <a href="Chart_TimelineID4a2447e9118.html">TimelineID4a2447e9118</a> &#8226; <a href="https://mages.github.io/googleVis/">googleVis-0.7.1</a></span><br /> 
+            <!-- htmlFooter -->
+            <span> 
+            R version 4.3.2 (2023-10-31 ucrt) 
+            &#8226; <a href="https://developers.google.com/terms/">Google Terms of Use</a> &#8226; <a href="https://developers.google.com/chart/interactive/docs/gallery/timeline">Documentation and Data Policy</a>
+        </span></div>
     </section>
 
-    <!-- Otras secciones de visualización... -->
+    <section class="visualization-section">
+        <h2>Boxplots</h2>
+        <img src="boxplots.png" alt="Boxplots">
+    </section>
 
-    <script type="text/javascript">
-        // Aquí va el código JavaScript generado
-        function gvisDataTimelineID4a2447e9118() {
-            // ... (código generado)
-        }
-
-        function drawChartTimelineID4a2447e9118() {
-            // ... (código generado)
-        }
-
-        // ... (otros códigos generados)
-
-        // Agregamos esta función para llamar a la función de dibujo al cargar la página
-        document.addEventListener("DOMContentLoaded", function() {
-            drawChartTimelineID4a2447e9118();
-        });
-    </script>
+    <section class="visualization-section">
+        <h2>Connected scatterplot</h2>
+        <img src="connected_scatterplot.png" alt="Connected scatterplot">
+    </section>
 
     <script src="script.js"></script>
+
 </body>
 </html>
