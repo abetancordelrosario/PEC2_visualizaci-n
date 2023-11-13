@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartTimelineID4a2447e9118"></script>
+    <script type="text/javascript">
+        // Aquí va el código JavaScript generado
+        function displayChartTimelineID4a2447e9118() {
+            var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+            var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+            window.clearTimeout(window.__gvisLoad);
+            window.__gvisLoad = setTimeout(function() {
+                var pkgCount = pkgs.length;
+                google.load("visualization", "1", { packages:pkgs, callback: function() {
+                    if (pkgCount != pkgs.length) {
+                        return;
+                    }
+                    while (callbacks.length > 0)
+                        callbacks.shift()();
+                } });
+            }, 100);
+        }
+    </script>
     <title>PEC2: Estudio de técnicas de visualización de datos</title>
 </head>
 <body>
@@ -13,21 +32,32 @@
     </header>
 
     <section class="visualization-section">
-        <h2></h2>
-        <img src="" alt="">
+        <h2>Apartado 1: Visualización 1</h2>
+        <!-- Aquí insertamos el div que contiene la visualización -->
+        <div id="TimelineID4a2447e9118" style="width: 600px; height: 400px;"></div>
+        <p class="r-code">Código en R para generar esta visualización...</p>
     </section>
 
-    <section class="visualization-section">
-        <h2>Boxplots</h2>
-        <img src="boxplots.png" alt="Boxplots">
-    </section>
+    <!-- Otras secciones de visualización... -->
 
-    <section class="visualization-section">
-        <h2>Connected scatterplot</h2>
-        <img src="connected_scatterplot.png" alt="Connected scatterplot">
-    </section>
+    <script type="text/javascript">
+        // Aquí va el código JavaScript generado
+        function gvisDataTimelineID4a2447e9118() {
+            // ... (código generado)
+        }
+
+        function drawChartTimelineID4a2447e9118() {
+            // ... (código generado)
+        }
+
+        // ... (otros códigos generados)
+
+        // Agregamos esta función para llamar a la función de dibujo al cargar la página
+        document.addEventListener("DOMContentLoaded", function() {
+            drawChartTimelineID4a2447e9118();
+        });
+    </script>
 
     <script src="script.js"></script>
-
 </body>
 </html>
