@@ -35,13 +35,5 @@ header {
 
 /* Estilos para la lista a la derecha */
 .right-list {
-    position: absolute;
-    top: 0;
-    right: 0;
-    list-style-type: none;
-    padding: 0;
-}
-
-.right-list li {
-    margin-bottom: 10px;
+    float: left;
 }
