@@ -35,5 +35,5 @@ header {
 
 /* Estilos para la lista a la derecha */
 .right-list {
-    float: left;
+    float: right;
 }
