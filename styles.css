@@ -41,16 +41,3 @@ header {
     align-items: center;
 }
 
-
-.right-list {
-    margin-left: 20px; /* Agrega un margen entre el Timeline y la lista */
-}
-
-.right-list ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.right-list li {
-    margin-bottom: 10px;
-}
