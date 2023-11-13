@@ -33,11 +33,3 @@ header {
     position: relative; /* Necesario para posicionar la lista */
 }
 
-
-/* Estilos para el contenedor */
-.container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
